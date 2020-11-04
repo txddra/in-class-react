@@ -1,6 +1,8 @@
-//going to use this css
 import { Component } from 'react';
+//going to use this css
 import './App.css';
+//going to use this to make the id's unique
+import{v4 as uuidv4 } from 'uuid'
 
 //our todo list that holds our data, hard coded
 export default class App extends Component{
@@ -8,15 +10,15 @@ export default class App extends Component{
   state={
     todoList:[
       {
-        id: 1,
+        id: uuidv4(),
         todo: "Hang up stockings"
       },
       {
-        id: 2,
+        id: uuidv4(),
         todo: "Decorate Tree",
       },
       {
-        id:3,
+        id:uuidv4(),
         todo:"Bake Cookies"
         
       },
